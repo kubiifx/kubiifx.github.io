@@ -18,7 +18,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 input[type="keyword"] {
     padding: 10px;
@@ -37,11 +38,12 @@ input[type="keyword"] {
 }
 .error {
     color: red;
-    margin-top: 10px;
     font-style: italic;
     font-size: 15px;
     min-height: 20px;
     min-width: 30px;
+    padding: 0;
+    margin: 0;
 }
 
 .watermark {
@@ -49,4 +51,17 @@ input[type="keyword"] {
   font-size: 10px;
   padding: 0;
   margin: 0;
+}
+
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  width: 110vw;
+  height: 110vh;
+  object-fit: cover;
+  z-index: -1;
+  transform: translate(-50%, -50%);
 }
