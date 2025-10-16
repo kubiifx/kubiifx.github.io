@@ -10,15 +10,25 @@
 </head>
 <body>
   <video autoplay muted loop id="myVideo">
-    <source src="updBackground.mp4" type="video/mp4">
+    <source src="mainbackground.mp4" type="video/mp4">
   </video>
-
-    <section class = "primary">
-        <p>test</p>
-        <a href = "secret.pdf" class = "downloadBTN" download><i class="fa-solid fa-download"></i></a>
+    <section class = "curvedText">
+        <svg viewBox = "0 0 1600 400">
+          <path id = "curve" d = "M 100, 200 A 700, 100 0 0,1 1500,200" fill = "transparent"/>
+          <text>
+            <textPath href = "#curve" startOffset = "50%">
+              VŠECHNO NEJLEPŠÍ !
+            </textPath>
+          </text>
+        </svg>
     </section>
+
+        <a href = "soubor.pdf" download = "test.pdf"><i class="fa-solid fa-download"></i></a>
     <footer>
         <p class = "watermark">coded by kubi ♡</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src = "particle.js" defer></script>
 </body>
 </html>
