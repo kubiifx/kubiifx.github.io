@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const userInput = input.value.trim().toLowerCase();
 
     if (userInput === CORRECT_PASSWORD) {
-      window.location.href = "home.html";
+      window.location.href = "home/";
     } else {
       errorMsg.textContent = "Špatné heslo. Zkus to znovu.";
       input.value = "";
