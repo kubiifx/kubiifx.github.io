@@ -1,4 +1,4 @@
-const CORRECT_PASSWORD = "test123";
+const CORRECT_PASSWORD = "veru_18bday";
 
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("loginBtn");
